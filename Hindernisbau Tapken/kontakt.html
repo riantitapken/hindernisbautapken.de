@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>kontakt</title>
+  <style>
+    html, body {
+      font-family: Didot, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
+    }
+    /* Logo */
+    #logo {
+     height: 150px;
+     text-align: center;
+     background-color: transparent;
+    }
+    
+    #logo img {
+      max-height: 100%;
+    }
+
+    /* Navigation */
+   nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: clamp(10px, 12vw, 70px);
+    width: 100%;
+    height: 60px;
+    background-color: #1f3750cc;
+    text-align: center;
+    padding: 0 10px;
+    }
+
+    nav p {
+      margin: 0;
+      line-height: 60px;
+    }
+
+    nav p a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: clamp(12px, 20vw, 16px);
+    }
+
+    nav p a:hover {
+      text-decoration: underline;
+    }
+
+    /* Inhalt */
+    #content {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+    }
+
+    #content h1 {
+      text-align: center;
+    }
+
+    #content p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Footer */
+    footer {
+      height: 70px;
+      background-color: #1f3750cc;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    footer p {
+      display: inline-block;
+      margin: 0 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo -->
+  <div id="logo">
+    <img src="logo.png" alt="Logo Hindernisbau Tapken">
+  </div>
+
+  <!-- Navigation -->
+<nav>
+  <p><a href="index.html">Startseite</a></p>
+  <p><a href="ueber-mich.html">Über mich</a></p>
+  <p><a href="hindernisse.html">Hindernisse</a></p>
+  <p><a href="kontakt.html">Kontakt</a></p>
+  <p><a href="anfahrt.html">Anfahrt</a></p>
+</nav>
+
+  <!-- Inhalt -->
+<div id="content">
+  <h1>Kontakt</h1>
+  <div class="kontakt-box">
+    <p><strong>Adresse</strong><br>
+    <br>
+    An der Bahn 30,<br>
+    27777 Ganderkesee</p>
+    <br>
+    <p><strong>Telefonnummer</strong><br>
+    <br>
+    0178 6006055</p>
+    <br>
+    <p><strong>E-Mail</strong><br>
+    <br>
+    wernertapken@t-online.de</p>
+  </div>
+</div>
+   		<footer>
+			<div>
+				<p>Impressum</p>
+				<p>AGB</p>
+			</div>
+		</footer>
+	</body>
+</html>
