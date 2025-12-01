@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Hindernisbau Tapken</title>
+  <style>
+    html, body {
+      font-family: Didot, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
+
+    }
+    /* Logo */
+    #logo {
+     height: 150px;
+     text-align: center;
+     background-color: transparent;
+    }
+    
+    #logo img {
+      max-height: 100%;
+    }
+
+    /* Navigation */
+   nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: clamp(10px, 12vw, 70px);
+    width: 100%;
+    height: 60px;
+    background-color: #1f3750cc;
+    text-align: center;
+    padding: 0 10px;
+    }
+
+    nav p {
+      margin: 0;
+      line-height: 60px;
+    }
+
+    nav p a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: clamp(12px, 20vw, 16px);
+    }
+
+    nav p a:hover {
+      text-decoration: underline;
+    }
+
+    /* Inhalt */
+    #content {
+      flex: 1;  
+      background-color: white;
+      padding: 20px;
+    }
+
+    #content h1 {
+      text-align: center;
+    }
+
+    #content p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Slider */
+    .slider-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px auto;
+      width: 90%;
+      max-width: 1000px;
+      position: relative;
+    }
+
+    .slider {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .slide {
+      flex: 0 0 33.3333%;
+      transition: transform 0.4s ease, scale 0.4s ease;
+      opacity: 0.6;
+      transform: scale(0.9);
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%;
+      height:250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px #00000033;
+    }
+
+    .slide.active {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    .nav-button {
+      background-color: #1f3750cc;
+      border: none;
+      color: white;
+      padding: 15px 15px;
+      font-size: 18px;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .nav-button:hover {
+      background-color: #1f375099;
+    }
+
+    #prevBtn {
+      left: -40px;
+    }
+
+    #nextBtn {
+      right: -40px;
+    }
+
+    @media screen and (max-width: 700px) {
+      .slide {
+        flex: 0 0 100%;
+        padding: 0 5px;
+      }
+
+      .slide.active {
+        transform: scale(1);
+      }
+    }
+
+    /* Footer */
+    footer {
+      min-height: 70px;
+      background-color: #1f3750cc;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    footer p {
+      display: inline-block;
+      margin: 0 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo -->
+  <div id="logo">
+    <img src="logo.png" alt="Logo Hindernisbau Tapken">
+  </div>
+
+  <!-- Navigation -->
+<nav>
+  <p><a href="index.html">Startseite</a></p>
+  <p><a href="ueber-mich.html">Über mich</a></p>
+  <p><a href="hindernisse.html">Hindernisse</a></p>
+  <p><a href="kontakt.html">Kontakt</a></p>
+  <p><a href="anfahrt.html">Anfahrt</a></p>
+</nav>
+
+  <!-- Inhalt -->
+  <div id="content">
+    <h1>Willkommen bei Hindernisbau Tapken</h1>
+    <p>
+Seit vielen Jahren bin ich im Parcoursbau tätig – vom Entwurf einzelner Hindernisse bis zur kompletten Gestaltung von Parcours auf Turnieren aller Klassen.
+Als gelernter Zimmermann, Reitlehrer und Richter bringe ich handwerkliches Können und sportliches Fachwissen zusammen.
+Sicherheit, Funktionalität und ein durchdachtes Design stehen für mich bei jeder Aufgabe im Mittelpunkt.
+Mehr über meine Arbeit und meine Leistungen erfahren Sie auf dieser Website.</p>
+
+    <!-- Bild-Slider -->
+    <div class="slider-container">
+        <button class="nav-button" id="prevBtn">&#8592;</button>
+            <div class="slider" id="slider">
+                <div class="slide"><img src="bilder/eichenkranz.jpg" alt="Werner Tapken bei einer Siegerehrung" title="eichenkranz"/></div>
+                <div class="slide"><img src="bilder/papa_ganderkesee.jpg" alt="Werner Tapken auf dem Turnierplatz Ganderkesee" title="papa_ganderkesee"/></div>
+                <div class="slide"><img src="bilder/sprung_turnier.jpg" alt="Werner Tapken über einem Sprung" title="sprung_turnier"/></div>
+                <div class="slide"><img src="bilder/papa_blau.jpg" alt="Werner Tapken vor einem Sprung" title="papa_blau"/></div>
+                <div class="slide"><img src="bilder/wiese_sprung.jpg" alt="Werner Tapken als junges Kind" title="wiese_sprung"/></div>
+                <div class="slide"><img src="bilder/papa_parcour.jpg" alt="Werner Tapken im Parcour" title="papa_parcour"/></div>
+                <div class="slide"><img src="bilder/rainer_papa.jpg" alt="Werner und Rainer Tapken" title="rainer_papa"/></div>
+                <div class="slide"><img src="bilder/papa_melanie.jpeg" alt="Werner Tapken und Melanie" title="papa_melanie"/></div>
+                <div class="slide"><img src="bilder/alt_papa.jpg" alt="Werner Tapken als Kind" title="alt_papa"/></div>
+                <div class="slide"><img src="bilder/quadronia.jpg" alt="Werner Tapken und Quadronia" title="quadronia"/></div>
+                <div class="slide"><img src="bilder/papa_messen.jpg" alt="Werner Tapken beim aufbauen" title="papa_messen"/></div>
+            </div>
+        <button class="nav-button" id="nextBtn">&#8594;</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Impressum</p>
+    <p>AGB</p>
+  </footer>    
+  <script>
+    const slider = document.getElementById('slider');
+    const slides = slider.getElementsByClassName('slide');
+    let index = 1; // Start mit dem 2. Bild (zentral)
+
+    function updateSlider() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+        slides[i].style.display = 'none';
+      }
+
+      let prev = (index - 1 + slides.length) % slides.length;
+      let next = (index + 1) % slides.length;
+
+      slides[prev].style.display = 'block';
+      slides[index].style.display = 'block';
+      slides[next].style.display = 'block';
+      slides[index].classList.add('active');
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      index = (index - 1 + slides.length) % slides.length;
+      updateSlider();
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      index = (index + 1) % slides.length;
+      updateSlider();
+    });
+
+    updateSlider(); // initial
+  </script>
+</body>
+</html>

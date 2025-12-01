@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>ueber-mich</title>
+  <style>
+    html, body {
+      font-family: Didot, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
+    }
+    
+    /* Logo */
+    #logo {
+     height: 150px;
+     text-align: center;
+     background-color: transparent;
+    }
+    
+    #logo img {
+      max-height: 100%;
+    }
+
+    /* Navigation */
+   nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: clamp(10px, 12vw, 70px);
+    width: 100%;
+    height: 60px;
+    background-color: #1f3750cc;
+    text-align: center;
+    padding: 0 10px;
+    }
+
+    nav p {
+      margin: 0;
+      line-height: 60px;
+    }
+
+    nav p a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: clamp(12px, 20vw, 16px);
+    }
+
+    nav p a:hover {
+      text-decoration: underline;
+    }
+
+    /* Inhalt */
+    #content {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+    }
+
+    #content h1 {
+      text-align: center;
+    }
+
+    #content p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+    
+    .ueber-mich-ordner {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        max-width: 1000px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .bild img {
+        max-width: 400px;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px #00000033;
+    }
+
+    .text {
+        flex: 1;
+        min-width: 250px;
+    }
+
+
+    /* Footer */
+    footer {
+      min-height: 70px;
+      background-color: #1f3750cc;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    footer p {
+      display: inline-block;
+      margin: 0 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo -->
+  <div id="logo">
+    <img src="logo.png" alt="Logo Hindernisbau Tapken">
+  </div>
+
+  <!-- Navigation -->
+<nav>
+  <p><a href="index.html">Startseite</a></p>
+  <p><a href="ueber-mich.html">Über mich</a></p>
+  <p><a href="hindernisse.html">Hindernisse</a></p>
+  <p><a href="kontakt.html">Kontakt</a></p>
+  <p><a href="anfahrt.html">Anfahrt</a></p>
+</nav>
+ 
+  <!-- Inhalt -->
+  <div id="content">
+    <h1>Über mich</h1>
+    <br>
+    <div class="ueber-mich-ordner">
+    <div class="bild">
+        <img src="bilder/quadronia.jpg" alt="Werner Tapken und Quadronia" title="quadronia"/>
+    </div>
+    <div class="text">
+    <p>Ich bin in der Nähe von Garrel aufgewachsen – in einer Gegend, in der Pferde und Landwirtschaft schon immer zum Alltag gehörten. Schon mein Vater war eng mit Pferden verbunden, und so wurde mir die Leidenschaft fürs Reiten praktisch in die Wiege gelegt.
+
+Nach meiner Ausbildung zum Zimmermann habe ich mich beruflich neu orientiert und meiner eigentlichen Leidenschaft gewidmet: dem Pferdesport. Ich wurde Reitlehrer, anschließend Richter, und schließlich entdeckte ich meine Begeisterung für den Parcoursbau.
+
+Seit vielen Jahren bin ich nun als Hindernisbauer tätig. Ich entwerfe und baue Reithindernisse für Turniere aller Leistungsklassen – vom regionalen Turnier bis hin zu Veranstaltungen auf höchstem Niveau. Dabei lege ich besonderen Wert auf durchdachte, faire und sichere Parcours, die Pferd und Reiter gleichermaßen fordern, aber nie überfordern.
+
+Was mich antreibt, ist die Kombination aus handwerklichem Können, sportlichem Verständnis und dem Wunsch, immer wieder neue, kreative Lösungen zu entwickeln. Jedes Hindernis, jeder Kurs ist für mich ein Stück Leidenschaft und Erfahrung – und diese Leidenschaft gebe ich mit jedem Projekt weiter.</p>
+    </div>
+    </div>
+  </div>
+		<footer>
+			<div>
+				<p>Impressum</p>
+				<p>AGB</p>
+			</div>
+		</footer>
+	</body>
+</html>
